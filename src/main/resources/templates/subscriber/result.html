@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<style>
+    #example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+    <title>Subscriber Sign-Up</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/html/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</style>
+</head>
+<body>
+
+        <h3>Subscriber Sign-up Form</h3>
+        <div id="example1">
+        <p>Thank you for signing up!</p>
+        </div>
+        <h4>Subscriber:</h4>
+        <div id="example2">
+        <p th:text="${firstName}" />
+        <p th:text="${lastName}" />
+        <p th:text="${userName}" />
+        </div>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+        <img src="https://i.ytimg.com/vi/JhExIWa0R-4/maxresdefault.jpg" alt="Sonic">
+</body>
+</html>
